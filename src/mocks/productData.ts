@@ -1,7 +1,7 @@
 import type { Product } from '../types/product';
 
 export const mockProduct: Product = {
-  id: "1",
+  id: 1,
   title: "iPhone 14 Pro Max 256GB - Morado Espacial",
   description: `El iPhone 14 Pro Max te permite captar detalles increíbles gracias a su cámara principal de 48 MP. 
   

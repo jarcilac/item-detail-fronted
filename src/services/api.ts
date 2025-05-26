@@ -14,7 +14,5 @@ export const getProductDetails = async (productId: string): Promise<Product> => 
 };
 
 export const getProductDetailsMock = async (productId: string): Promise<Product> => {
-  // Simulamos un retraso de red de 1 segundo
-  await new Promise(resolve => setTimeout(resolve, 1000));
   return mockProduct;
 }; 

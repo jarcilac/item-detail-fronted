@@ -4,7 +4,7 @@ import Grid from '@mui/material/grid';
 import { Box, Container, Typography, Rating, Chip, Divider, Button } from '@mui/material';
 import { LocalShipping, CreditCard, Store } from '@mui/icons-material';
 import type { Product } from '../types/product';
-import { getProductDetailsMock } from '../services/api';
+import { getProductDetails } from '../services/api';
 
 export const ProductDetail = () => {
   const { id } = useParams<{ id: string }>();
@@ -16,7 +16,7 @@ export const ProductDetail = () => {
     const fetchProduct = async () => {
       try {
         if (id) {
-          const data = await getProductDetailsMock(id);
+          const data = await getProductDetails(id);
           setProduct(data);
           setMainImage(data.images[0]);
         }
@@ -182,7 +182,7 @@ export const ProductDetail = () => {
           <Typography variant="h5" sx={{ mb: 2 }}>
             Opiniones sobre el producto
           </Typography>
-          {product.reviews.map((review) => (
+          {product.reviews?.map((review) => (
             <Box key={review.id} sx={{ mb: 2 }}>
               <Box sx={{ display: 'flex', alignItems: 'center', mb: 1 }}>
                 <Rating value={review.rating} readOnly size="small" />
