@@ -1,6 +1,6 @@
 # Product Detail
 
-This project is an implementation of a product detail view inspired by MercadoLibre, built with React and TypeScript.
+This project is an implementation of a product detail view, built with React and TypeScript.
 
 ## Features
 
