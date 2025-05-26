@@ -1,16 +1,16 @@
-# Detalle de Producto - Estilo MercadoLibre
+# Product Detail - MercadoLibre Style
 
-Este proyecto es una implementación del detalle de producto inspirada construida con React y TypeScript.
+This project is an implementation of a product detail view inspired by MercadoLibre, built with React and TypeScript.
 
-## Características
+## Features
 
-- Vista detallada del producto con imágenes
-- Información del precio y métodos de pago
-- Detalles del vendedor
-- Sistema de calificaciones y reseñas
-- Diseño responsive
+- Detailed product view with images
+- Price information and payment methods
+- Seller details
+- Ratings and reviews system
+- Responsive design
 
-## Tecnologías Utilizadas
+## Technologies Used
 
 - React
 - TypeScript
@@ -18,49 +18,49 @@ Este proyecto es una implementación del detalle de producto inspirada construid
 - React Router
 - Axios
 
-## Requisitos Previos
+## Prerequisites
 
-- Node.js (versión 18 o superior)
+- Node.js (version 18 or higher)
 - npm
 
-## Instalación
+## Installation
 
-1. Clona el repositorio:
+1. Clone the repository:
    ```bash
-   git clone [URL_DEL_REPOSITORIO]
+   git clone [REPOSITORY_URL]
    ```
 
-2. Navega al directorio del proyecto:
+2. Navigate to the project directory:
    ```bash
    cd item-detail-frontend
    ```
 
-3. Instala las dependencias:
+3. Install dependencies:
    ```bash
    npm install
    ```
 
-## Uso
+## Usage
 
-1. Inicia el servidor de desarrollo:
+1. Start the development server:
    ```bash
    npm run dev
    ```
 
-2. Abre tu navegador y visita:
+2. Open your browser and visit:
    ```
-   http://localhost:5173/product/[ID_DEL_PRODUCTO]
+   http://localhost:5173/product/[PRODUCT_ID]
    ```
 
-## Estructura de la API
+## API Structure
 
-La aplicación espera una API con el siguiente endpoint:
+The application expects an API with the following endpoint:
 
 ```
 GET /api/products/:id
 ```
 
-Ejemplo de respuesta:
+Response example:
 ```json
 {
   "id": "string",
@@ -104,10 +104,10 @@ Ejemplo de respuesta:
 }
 ```
 
-## Scripts Disponibles
+## Available Scripts
 
-- `npm run test`: Corre los unit tests
-- `npm run test`: Muestra el coverage de los unit tests
-- `npm run dev`: Inicia el servidor de desarrollo 
-- `npm run build`: Construye la aplicación para producción
-- `npm run preview`: Previsualiza la versión de producción localmente 
+- `npm run test`: Run unit tests
+- `npm run coverage`: Show unit tests coverage
+- `npm run dev`: Start development server
+- `npm run build`: Build the application for production
+- `npm run preview`: Preview the production build locally 
