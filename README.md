@@ -1,4 +1,4 @@
-# Product Detail - MercadoLibre Style
+# Product Detail
 
 This project is an implementation of a product detail view inspired by MercadoLibre, built with React and TypeScript.
 
